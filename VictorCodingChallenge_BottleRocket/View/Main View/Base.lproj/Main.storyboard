@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e3o-J3-flo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lunch Tyme-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VictorCodingChallenge_BottleRocket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-8p-Yff">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z9s-6r-v3B">
+                                    <size key="itemSize" width="414" height="218"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="caM-ae-oQg" customClass="RestaurantCollectionViewCell" customModule="VictorCodingChallenge_BottleRocket" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4e9-RF-AOm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNm-xZ-Ch1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="lTY-Mr-7iC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-i5-uea">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="181" id="J3K-Kt-3Uu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-Lm-EKg">
+                                                    <rect key="frame" x="12" y="195.5" width="390" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-zb-dj0">
+                                                    <rect key="frame" x="12" y="170.5" width="390" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eNm-xZ-Ch1" secondAttribute="trailing" id="7ne-BR-s9L"/>
+                                                <constraint firstItem="zIk-i5-uea" firstAttribute="top" secondItem="eNm-xZ-Ch1" secondAttribute="top" id="BxW-g3-SqO"/>
+                                                <constraint firstItem="zIk-i5-uea" firstAttribute="trailing" secondItem="eNm-xZ-Ch1" secondAttribute="trailing" id="FZQ-Cb-P6d"/>
+                                                <constraint firstItem="zIk-i5-uea" firstAttribute="bottom" secondItem="eNm-xZ-Ch1" secondAttribute="bottom" constant="1" id="JFe-xK-Fe3"/>
+                                                <constraint firstItem="Tdf-Lm-EKg" firstAttribute="leading" secondItem="4e9-RF-AOm" secondAttribute="leading" constant="12" id="JT6-va-SAi"/>
+                                                <constraint firstItem="Tdf-Lm-EKg" firstAttribute="top" secondItem="r4p-zb-dj0" secondAttribute="bottom" constant="3" id="JwZ-U3-pFV"/>
+                                                <constraint firstItem="eNm-xZ-Ch1" firstAttribute="top" secondItem="4e9-RF-AOm" secondAttribute="top" id="PiQ-sG-xIW"/>
+                                                <constraint firstAttribute="bottom" secondItem="eNm-xZ-Ch1" secondAttribute="bottom" id="VLr-VW-ug5"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tdf-Lm-EKg" secondAttribute="trailing" constant="12" id="Y8d-yA-yjZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Tdf-Lm-EKg" secondAttribute="bottom" constant="6" id="a7e-1d-fpt"/>
+                                                <constraint firstItem="r4p-zb-dj0" firstAttribute="trailing" secondItem="Tdf-Lm-EKg" secondAttribute="trailing" id="gSP-MR-rkQ"/>
+                                                <constraint firstItem="eNm-xZ-Ch1" firstAttribute="leading" secondItem="4e9-RF-AOm" secondAttribute="leading" id="hwu-Xr-qUN"/>
+                                                <constraint firstItem="r4p-zb-dj0" firstAttribute="leading" secondItem="Tdf-Lm-EKg" secondAttribute="leading" id="lYH-6s-NMO"/>
+                                                <constraint firstItem="zIk-i5-uea" firstAttribute="leading" secondItem="eNm-xZ-Ch1" secondAttribute="leading" id="ofx-hr-7RE"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="218"/>
+                                        <connections>
+                                            <outlet property="backgroundImageView" destination="eNm-xZ-Ch1" id="2wr-qF-W1M"/>
+                                            <outlet property="restaurantCategoryLabel" destination="Tdf-Lm-EKg" id="Wcl-Uf-ZhR"/>
+                                            <outlet property="restaurantNameLabel" destination="r4p-zb-dj0" id="ik0-cc-OUm"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JWg-8p-Yff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qj4-2P-m60"/>
+                            <constraint firstItem="JWg-8p-Yff" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fwD-Z2-aop"/>
+                            <constraint firstItem="JWg-8p-Yff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nxd-g9-r3g"/>
+                            <constraint firstItem="JWg-8p-Yff" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="odE-Wg-xSE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lunch Tyme" id="1Ti-I6-2Cu">
+                        <barButtonItem key="backBarButtonItem" title=" " id="uRy-hS-CZo"/>
+                        <barButtonItem key="rightBarButtonItem" image="icon_map" id="KK7-el-S96">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="mapButtonTapped:" destination="BYZ-38-t0r" id="iQW-3M-ffP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="JWg-8p-Yff" id="Lg2-im-ylb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.39130434782609" y="1553.5714285714284"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Bwx-fz-76p">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="e3o-J3-flo" customClass="TabBarViewController" customModule="VictorCodingChallenge_BottleRocket" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="NCa-nd-r9T">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="customBlack"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mbp-TR-CCi" kind="relationship" relationship="viewControllers" id="vj5-VR-9Eh"/>
+                        <segue destination="brZ-i5-4oa" kind="relationship" relationship="viewControllers" id="Kjy-z8-Hgk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvW-UZ-Pu8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+        <!--lunch-->
+        <scene sceneID="sLw-Jc-Kgy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mbp-TR-CCi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="lunch" image="tab_lunch" id="Zsc-VL-mf6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="csL-sm-OIc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="customGreen"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Eh-ZV-b83"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aj7-Js-RJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="854"/>
+        </scene>
+        <!--internet-->
+        <scene sceneID="QWU-kp-ee9">
+            <objects>
+                <viewController id="brZ-i5-4oa" customClass="InternetViewController" customModule="VictorCodingChallenge_BottleRocket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TMu-KL-lYE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PIl-tO-Afc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="internet" image="tab_internets" id="YyV-pz-P6f"/>
+                    <navigationItem key="navigationItem" id="pyy-O9-Sew"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThI-Ol-1kA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cellGradientBackground" width="320" height="116"/>
+        <image name="icon_map" width="30" height="30"/>
+        <image name="tab_internets" width="18" height="22"/>
+        <image name="tab_lunch" width="24" height="24"/>
+        <namedColor name="customBlack">
+            <color red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="customGreen">
+            <color red="0.2627450980392157" green="0.90980392156862744" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
